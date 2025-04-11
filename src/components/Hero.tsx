@@ -28,7 +28,7 @@ export default function Hero() {
         </div>
         <div className="w-1/2 justify-self-end">
           <Image
-            src={"/assets/img/myphoto.jpeg"}
+            src={"./assets/img/myphoto.jpeg"}
             alt="Suman Parajuli Picture"
             height={400}
             width={400}
