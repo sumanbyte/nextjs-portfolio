@@ -33,6 +33,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     environment: github-pages
+    env:
+      NEXT_PUBLIC_BASE_PATH: ${{ vars.NEXT_PUBLIC_BASE_PATH }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -83,8 +85,6 @@ jobs:
       - name: Use Variables
         run: |
           echo "repository variable: $NEXT_PUBLIC_BASE_PATH"
-        env:
-          NEXT_PUBLIC_BASE_PATH: ${{ vars.NEXT_PUBLIC_BASE_PATH }}
       - name: Dump environment variables
         run: printenv
       - name: Upload artifact
