@@ -6,7 +6,7 @@ export const projectsData = [
     description:
       "Users can Login signup, forget, reset their password. they can securely checkout and search for items.",
     githubUrl: "https://github.com/sumanparajuli/next-ecommerce",
-    liveUrl: "https://next-ecommerce.vercel.app/",
+    liveUrl: "https://next-ecommerce-eight-cyan.vercel.app/",
     imageUrl: `${prefix}/assets/img/projects/next-ecommerce.png`,
     tags: ["Next.js", "TypeScript", "Tailwind CSS"],
   },
