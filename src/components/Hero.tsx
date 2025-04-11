@@ -1,7 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import { prefix } from "../../prefix";
 
 export default function Hero() {
+  console.log(prefix);
   return (
     <section className="min-h-screen">
       <div className="flex justify-between py-10">
