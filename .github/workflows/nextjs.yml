@@ -84,6 +84,8 @@ jobs:
           echo "repository variable: $NEXT_PUBLIC_BASE_PATH"
         env:
           NEXT_PUBLIC_BASE_PATH: ${{ vars.NEXT_PUBLIC_BASE_PATH }}
+      - name: Dump environment variables
+        run: printenv
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
