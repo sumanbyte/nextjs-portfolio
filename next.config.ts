@@ -7,6 +7,9 @@ const nextConfig: NextConfig = {
   basePath: isProd ? "/nextjs-portfolio" : "",
   assetPrefix: isProd ? "/nextjs-portfolio" : "",
   output: isProd ? "export" : undefined,
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;
