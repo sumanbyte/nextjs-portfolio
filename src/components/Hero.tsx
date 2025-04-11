@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { prefix } from "../../prefix";
 
 export default function Hero() {
   return (
@@ -28,7 +29,7 @@ export default function Hero() {
         </div>
         <div className="w-1/2 justify-self-end">
           <Image
-            src={"/assets/img/myphoto.jpeg"}
+            src={`${prefix}/assets/img/myphoto.jpeg`}
             alt="Suman Parajuli Picture"
             height={400}
             width={400}
