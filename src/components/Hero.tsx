@@ -2,13 +2,14 @@
 
 import Image from "next/image";
 import { prefix } from "../../prefix";
+import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex justify-center items-center">
-      <div className="flex justify-between py-10">
-        <div className="w-1/2 space-y-4">
-          <div className="text-3xl space-y-2">
+    <section className="md:min-h-screen flex justify-center items-center mt-10 md:mt-0">
+      <div className="flex flex-col-reverse md:flex-row items-center md:place-items-start md:justify-between py-10">
+        <div className="w-full md:w-1/2 space-y-4">
+          <div className="text-2xl md:text-3xl space-y-2">
             <p>Hello 👋</p>
             <p>I am Suman Parajuli - curious</p>
             <p>full stack developer based in Biratnagar, Nepal</p>
@@ -24,18 +25,21 @@ export default function Hero() {
             <button className="bg-black hover:bg-gray-800 cursor-pointer text-white rounded-3xl px-4 py-2">
               Download CV
             </button>
-            <button className="bg-black hover:bg-gray-800 cursor-pointer text-white rounded-3xl px-4 py-2">
+            <Link
+              href={"#contact"}
+              className="bg-black hover:bg-gray-800 cursor-pointer text-white rounded-3xl px-4 py-2"
+            >
               Get In Touch
-            </button>
+            </Link>
           </div>
         </div>
-        <div className="w-1/2 justify-self-end">
+        <div className="w-full md:w-1/2 md:justify-self-end">
           <Image
             src={`${prefix}/assets/img/myphoto.jpeg`}
             alt="Suman Parajuli Picture"
             height={400}
             width={400}
-            className="rounded-full justify-self-end"
+            className="rounded-full justify-self-center size-64 md:size-[400px] md:justify-self-end"
           />
         </div>
       </div>

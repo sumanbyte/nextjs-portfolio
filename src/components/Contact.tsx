@@ -63,8 +63,8 @@ export default function Contact() {
   return (
     <section className=" py-10" id="contact">
       <p className="text-3xl pb-10">Contact</p>
-      <div className="flex gap-2">
-        <div className="flex flex-col gap-4 w-1/2">
+      <div className="flex flex-col md:flex-row gap-10 md:gap-2">
+        <div className="flex flex-col gap-4 w-full md:w-1/2">
           <div className="flex gap-4 items-center ">
             <div className="bg-black rounded-full text-white p-2">
               <MdEmail className="text-xl" />
@@ -84,7 +84,7 @@ export default function Contact() {
             <p>Barahkshetra Municipality-7, Sunsari, Nepal</p>
           </div>
         </div>
-        <div className="w-1/2">
+        <div className="w-full md:w-1/2">
           <form action="" onSubmit={handleSubmit}>
             <div className="flex flex-col gap-2">
               <div className="flex flex-col gap-1">
