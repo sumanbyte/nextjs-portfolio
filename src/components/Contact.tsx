@@ -21,7 +21,6 @@ export default function Contact() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setIsLoading(true);
     const email = emailRef.current?.value;
     const name = nameRef.current?.value;
     const message = messageRef.current?.value;
@@ -31,6 +30,7 @@ export default function Contact() {
       return;
     }
 
+    setIsLoading(true);
     try {
       const response = await fetch(
         `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/sendmail`,
