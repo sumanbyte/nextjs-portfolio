@@ -4,9 +4,8 @@ import Image from "next/image";
 import { prefix } from "../../prefix";
 
 export default function Hero() {
-  console.log(prefix);
   return (
-    <section className="min-h-screen">
+    <section className="min-h-screen flex justify-center items-center">
       <div className="flex justify-between py-10">
         <div className="w-1/2 space-y-4">
           <div className="text-3xl space-y-2">

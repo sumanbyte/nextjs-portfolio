@@ -61,7 +61,7 @@ export default function Contact() {
   };
 
   return (
-    <section className=" py-10">
+    <section className=" py-10" id="contact">
       <p className="text-3xl pb-10">Contact</p>
       <div className="flex gap-2">
         <div className="flex flex-col gap-4 w-1/2">
@@ -75,13 +75,13 @@ export default function Contact() {
             <div className="bg-black rounded-full text-white p-2">
               <FaPhoneAlt className="text-lg" />
             </div>
-            <p>+977 1234567890</p>
+            <p>+977 9825304125</p>
           </div>
           <div className="flex gap-4 items-center">
             <div className="bg-black rounded-full text-white p-2">
               <FaAddressCard className="text-lg" />
             </div>
-            <p>123 Main Street, New York, NY 10010</p>
+            <p>Barahkshetra Municipality-7, Sunsari, Nepal</p>
           </div>
         </div>
         <div className="w-1/2">

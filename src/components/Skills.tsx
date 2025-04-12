@@ -18,7 +18,7 @@ const skills = [
 
 export default function Skills() {
   return (
-    <div>
+    <div id="skills">
       <p className="text-3xl">Skills</p>
       <div className="flex flex-wrap gap-x-10 gap-y-4 pt-10">
         {skills.map((skill) => (

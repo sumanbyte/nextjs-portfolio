@@ -6,13 +6,13 @@ import { projectsData } from "./data/projects-data";
 
 export default function Projects() {
   return (
-    <div className="py-10">
+    <div className="py-10" id="projects">
       <p className="text-3xl pb-10">Projects</p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-4">
         {projectsData.map((project, index) => (
           <div
             key={index}
-            className="shadow-2xl rounded-lg flex flex-col h-full"
+            className="shadow-xl rounded-lg flex flex-col h-full"
           >
             <div className="overflow-clip relative rounded-tl-lg rounded-tr-lg ">
               <div className="relative group">
@@ -43,14 +43,16 @@ export default function Projects() {
               </div>
 
               <div className="flex justify-between mt-auto">
-                <Link
-                  target="_blank"
-                  href={project.githubUrl}
-                  className="flex gap-2 items-center"
-                >
-                  <FaGithub className="text-xl" />
-                  <span>Github</span>
-                </Link>
+                {project.githubUrl && (
+                  <Link
+                    target="_blank"
+                    href={project.githubUrl}
+                    className="flex gap-2 items-center"
+                  >
+                    <FaGithub className="text-xl" />
+                    <span>Github</span>
+                  </Link>
+                )}
                 <Link
                   target="_blank"
                   href={project.liveUrl}
