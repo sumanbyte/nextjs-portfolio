@@ -22,9 +22,13 @@ export default function Hero() {
             in working with databases, APIs, and backend technologies.
           </p>
           <div className="flex gap-4">
-            <button className="bg-black hover:bg-gray-800 cursor-pointer text-white rounded-3xl px-4 py-2">
+            <Link
+              target="_blank"
+              href={`${prefix}/Suman Parajuli CV.pdf`}
+              className="bg-black hover:bg-gray-800 cursor-pointer text-white rounded-3xl px-4 py-2"
+            >
               Download CV
-            </button>
+            </Link>
             <Link
               href={"#contact"}
               className="bg-black hover:bg-gray-800 cursor-pointer text-white rounded-3xl px-4 py-2"

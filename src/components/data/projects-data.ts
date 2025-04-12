@@ -63,8 +63,8 @@ export const projectsData = [
     name: "Personal Portfolio",
     description:
       "A personal portfolio built when i was getting started on web development.",
-    githubUrl: "https://github.com/sumanbyte/sumanbyte.github.io",
-    liveUrl: "https://www.parajulisuman.com.np/",
+    githubUrl: "https://github.com/sumanbyte/portfolio-website",
+    liveUrl: "https://parajulisuman.com.np/portfolio-website/",
     imageUrl: `${prefix}/assets/img/projects/portfolio-website.png`,
     tags: ["HTML", "CSS", "Javascript"],
   },
