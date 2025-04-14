@@ -31,8 +31,8 @@ export const projectsData = [
     name: "Travel Log App",
     description:
       "Users can login, signup, create, delete, update, like, comment on posts.",
-    githubUrl: null,
-    liveUrl: "https://github.com/sumanbyte/travel-log-app",
+    githubUrl: "https://github.com/sumanbyte/travel-log-app",
+    liveUrl: "https://travel-log-frontend.netlify.app/",
     imageUrl: `${prefix}/assets/img/projects/travel-log-app.png`,
     tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
   },
